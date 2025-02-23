@@ -1,0 +1,11 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Adjust background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    /* padding: 15px 20px; */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  

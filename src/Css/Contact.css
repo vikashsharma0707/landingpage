@@ -1,0 +1,193 @@
+/* Contact Container */
+.contact-container {
+  background: url("../Images/Task7.gif") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Contact Box with Blur Effect */
+.contact-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Floating Icon */
+.floating-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.floating-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Heading */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+/* Placeholder Styling */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  color: white;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #e0445e;
+}
+
+/* Custom Button */
+.btn {
+  background-color: #6D235C; /* Purple shade */
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #8a2c70;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  background-color: #5a1c4a;
+  transform: translateY(1px);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .contact-container {
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .contact-box {
+    max-width: 500px;
+    padding: 25px;
+  }
+}
+
+/* 🔹 Tablets (Width: 768px - 1024px) */
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 15px;
+  }
+}
+
+/* 🔹 Mobile (Width: 480px - 768px) */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .contact-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
