@@ -25,6 +25,7 @@ const Navbar = () => {
        
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <GiHamburgerMenu className="hamburger-icon" />
+          
         </div>
       </div>
     </nav>
